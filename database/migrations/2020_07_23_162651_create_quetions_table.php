@@ -14,7 +14,7 @@ class CreateQuetionsTable extends Migration
     public function up()
     {
         Schema::create('quetions', function (Blueprint $table) {
-            $table->increment('id');
+            $table->id();
             $table->string('title');
             $table->string('slug');
             $table->text('body');
