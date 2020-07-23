@@ -36,4 +36,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public fucnction quetion()
+   {
+       return $this->hasMany(Quetion::class);
+   }
 }
